@@ -1,0 +1,40 @@
+<audio id="click" src="res/mp3/click.mp3" preload="auto" type="audio/mpeg" autoplay></audio>
+<audio id="musica" src="res/mp3/musica-back.mp3" preload="auto" type="audio/mpeg" loop autoplay></audio>
+<div class="w3-container map" style="height: 100vh !important; background-color: black !important;">
+    <h1
+        style="color:#ffffcc;font-family:'Benguiat-Bold';text-align:center; font-stretch: expanded !important; line-height: 1.2em">
+        ¿Qué harías en esta situación?</h1>
+    <p style="text-align: center; padding: 0;">
+        Haz clic en una imagen para seleccionar tu respuesta
+    </p>
+    <div class="w3-row" style="height: 60%;">
+        <div class="w3-half w3-container" style="border: solid black; padding: 0% !important; margin: 0 !important;"
+            onclick="activity.popupD();">
+            <p align="left"
+                style="line-height:120%; padding:0.5rem; margin-bottom: 8px !important; background-color: white; color: black;">
+                Le das Like a la foto, la compartes y hasta la imprimes.
+            </p>
+            <img style="width:100%; height:auto; text-align: center; padding: 0;"
+                src="res/svg/ayuda-extraterrestre/ayuda-extraterrestre-3-01.svg" alt="" class="w3-image slide">
+        </div>
+        <div class="w3-half w3-container" style="border: solid black; padding: 0% !important; margin: 0 !important;"
+            onclick="activity.ayudaExtraterrestre4();">
+            <p align="left"
+                style="line-height:120%; padding:0.5rem; margin-bottom: 8px !important; background-color: white; color: black;">
+                Evitas que la información del cliente se siga divulgando. 
+            </p>
+            <img style="width:100%; height:auto; text-align: center; padding: 0;"
+                src="res/svg/ayuda-extraterrestre/ayuda-extraterrestre-3-02.svg" alt="" class="w3-image slide">
+        </div>
+    </div>
+    <div class="w3-row w3-center footer-slide">
+        <div class="w3-third w3-container w3-left" onclick="activity.ayudaExtraterrestre2();" style="width: 18%;">
+            <img src="res/svg/right-arrow-left.svg" alt="" class="w3-image escenarios-button"
+                style="max-width: 50% !important;">
+        </div>
+        <div class="w3-third w3-container w3-right" onclick="activity.ayudaExtraterrestre4();" style="width: 18%;">
+            <img src="res/svg/right-arrow-right.svg" alt="" class="w3-image escenarios-button"
+                style="max-width: 50% !important;">
+        </div>
+    </div>
+</div>

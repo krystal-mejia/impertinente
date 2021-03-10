@@ -1,0 +1,206 @@
+@font-face {
+  font-family: Benguiat-Bold;
+  src: url('fonts/men-in-black/GreatLakesNF.ttf');
+}
+
+@font-face {
+  font-family: Santander-Regular;
+  src: url('fonts/santander/Santander-Regular.ttf');
+}
+
+@font-face {
+  font-family: Santander-Bold;
+  src: url('fonts/santander/Santander-Bold.ttf');
+}
+
+@font-face {
+  font-family: Barlow-Condensed-Italic;
+  src: url('fonts/barlow-condensed/BarlowCondensed-Italic.ttf');
+}
+
+@font-face {
+  font-family: Font-Awesome;
+  src: url('fonts/font-awesome/FontAwesome.otf');
+}
+
+/*******************************************************************************
+Backgrounds
+*******************************************************************************/
+body, .cover, .escenario-profile-box, .bad-answer, .game-over, .good-answer { background-color: #000000; }
+.cover-button { background-color: #ff9966; border: solid black 3px; font-family: Benguiat-Bold; font-stretch:expanded; color: black;}
+.green-button { background-color: #43f000; }
+.red-button { background-color: #dc3545; }
+.pyr { background: rgba(0,0,0,0); }
+.pyr:hover { background-color: #0d6dfd; }
+
+body { background-color: black;}
+.cover { background-image: url('../res/png/back-index-desktop.png'); }
+.escenarios { background-image: url('../res/png/back-index-escenarios.png'); background-repeat: no-repeat; background-size: cover; }
+
+.cover, .game-over { background-repeat: no-repeat; background-size: cover; background-position: center;}
+
+/*******************************************************************************
+Borders
+*******************************************************************************/
+.green-button, .red-button { border: none; }
+.cover-button, .escenario-box, .escenario-profile-box { border-radius: 4px;}
+.escenario, .escenario-box { border: solid black 2px; }
+.good-answer { border: solid #43f000 2px; border-radius: 4px; }
+.bad-answer { border: solid #dc3545 2px; border-radius: 4px; }
+.pyr { border: solid #0d6dfd 2px; border-radius:4px; }
+.bad-answer, .good-answer, .green-button, .red-button { border-radius: 4px;}
+
+/*******************************************************************************
+Cursors
+*******************************************************************************/
+.cover-button, .escenario, .green-button, .red-button, .pyr, .btn-map-svg { cursor: pointer; }
+
+/*******************************************************************************
+Efects
+*******************************************************************************/
+.escenario { transition: 0.3s; }
+.escenario-profile-box, .green-button:hover, .red-button:hover { opacity: 0.5; }
+.slide:hover { opacity: 0.5; }
+/* .escenarios-button:hover { color: #dc3545; } */
+
+/*******************************************************************************
+Font families
+*******************************************************************************/
+body { font-family: "Barlow-Condensed-Italic", sans-serif; text-transform: uppercase;}
+h1, h2, h3, h4, h5, h6, .green-button, .red-button, .pyr { font-family: "Barlow-Condensed-Italic", sans-serif; text-transform: uppercase;}
+
+
+/*******************************************************************************
+Font sizes
+*******************************************************************************/
+body { font-size: 1.2em; line-height: 1em !important;}
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6, .cover-button, .green-button, .red-button { font-size: 1.1em; }
+
+@media only screen and (min-width: 961px) {
+  body { font-size: 1em; line-height: 1em !important;}
+  h1 { font-size: 1.8em;}
+  h2 { font-size: 1.7em; }
+  h3 { font-size: 1.6em; }
+  h4 { font-size: 1.5em; }
+  h5 { font-size: 1.4em; }
+  h6, .cover-button, .green-button, .red-button { font-size: 1.3em; }
+  }
+
+@media only screen and (min-width: 1201px) {
+  body { font-size: 1.6em; line-height: 1em !important;}
+  h1 { font-size: 2em; line-height: 1.2em !important;}
+  h2 { font-size: 1.6em; }
+  h3 { font-size: 1.8em; }
+  h4 { font-size: 1.7em; }
+  h5 { font-size: 1.6em; }
+  h6, .cover-button, .green-button, .red-button { font-size: 1.5em; }
+}
+
+/*******************************************************************************
+Foregraunds
+*******************************************************************************/
+body, .pyr:hover { color: #ffffff; }
+.green-button, .red-button { color: #000000; }
+.pyr { color: #0d6dfd; }
+
+/*******************************************************************************
+Heights
+*******************************************************************************/
+.cover, .game-over  { height: 100vh; }
+.escenarios, .escenario, .escenario-profile-photo { height: auto; }
+/* .escenarios-button { height: 3%; background-size: cover;} */
+.escenario-box { height: 100%; }
+
+/*******************************************************************************
+Line heights
+*******************************************************************************/
+body { line-height: 1em !important; }
+
+/*******************************************************************************
+Margins
+*******************************************************************************/
+.escenario, .green-button, .red-button { margin: 8px; }
+
+/*******************************************************************************
+Opacities
+*******************************************************************************/
+.escenarios-button:hover, .escenarios-button:focus {filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(143deg) brightness(114%) contrast(116%);} 
+.slide {filter: sepia(1) blur(3px); opacity: 0.5;}
+.slide:hover {filter: sepia(0) blur(0px); opacity: 1;}
+/*******************************************************************************
+Paddings
+*******************************************************************************/
+.cover-button, .green-button, .red-button, .pyr { padding: 8px 16px; }
+.bad-answer, .good-answer, .escenarios, .escenario-profile-box { padding: 32px }
+.escenario-box { padding: 16px }
+
+/*******************************************************************************
+Positions
+*******************************************************************************/
+.escenario, .escenario-box, .escenario-profile-box, .escenario-profile-photo { position: relative; }
+/*******************************************************************************
+Widths
+*******************************************************************************/
+body { min-width: 320px; }
+.bad-answer, .good-answer { width: 80vw; }
+.cover, .escenarios, .game-over { width: 100vw; }
+.cover-logo { width: 80vw; }
+.escenario { min-width: 20%; width: 140px; }
+.escenarios-button {height: 100%; background-image: none;}
+.footer {position:fixed; bottom:0; z-index:999999; width: 100%; height: 3vh; background-color: #ed1c24; padding: 1% 0 1% 0; border-top: solid black 6px;}
+.footer-slide {position:fixed; bottom:0; z-index:999999; width: 100%; height: 3vh; background-color: #ed1c24; padding: 1% 0 1% 0; border-top: solid black 6px; box-sizing: unset;}
+video {width: 100%; height: auto;}
+
+
+/*.escenario-profile-photo { min-width: 60%; width: 320px;}*/
+
+@media only screen and (min-width: 1025px){
+.escenario {width: 240px;}
+.cover-logo { width: 30vw !important;}
+.escenario { min-width: 20%; width: 140px; }
+.escenarios-button { max-width:5%; height: 5%; width: auto; background-image: none;}
+.footer {position:fixed; bottom:0; z-index:999999; width: 100%; height: 3vh; background-color: #ed1c24; padding: 1% 0 1% 0; border-top: solid black 6px;}
+.footer-slide {position:fixed; bottom:0; z-index:999999; width: 100%; height: 3vh; background-color: #ed1c24; padding: 1% 0 1% 0; border-top: solid black 6px; box-sizing: unset;}
+video {height: 70%; width: auto;}
+}
+
+
+/* ------------------------------- */
+
+
+.map  {
+  background-color: black ;
+  background-size:cover;
+  height: 10vh;
+  width: 100vw;
+  padding: 0;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.quizz  {
+  background-repeat:repeat-y;
+  background-size:cover;
+  height: auto;
+  width: 100vw;
+  padding: 4vw;
+}
+
+.titulo-sq {
+  color:#dc3545;
+  font-family: "Benguiat-Bold", sans-serif;
+  text-align:center;
+}
+
+.titulo-mal-sq {
+  color:#dc3545;
+  font-family: "Santander-Bold", serif;
+  text-align:center;
+}
